@@ -12,7 +12,7 @@ function CategoryScreen({ navigation }) {
     }
 
     return (
-      <CategoryGridTile
+      <CategoryGridTilez
         title={itemData.item.title}
         color={itemData.item.color}
         onPress={pressHandler}
