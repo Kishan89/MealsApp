@@ -1,4 +1,5 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from 'react-native';
+
 function MealDetails({
   duration,
   complexity,
@@ -20,11 +21,12 @@ function MealDetails({
 }
 
 export default MealDetails;
+
 const styles = StyleSheet.create({
   details: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
     padding: 8,
   },
   detailItem: {

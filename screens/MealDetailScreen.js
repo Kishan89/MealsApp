@@ -1,18 +1,19 @@
-import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect } from 'react';
+import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
 
-import List from "./components/MealDetail/List";
-import Subtitle from "./components/MealDetail/Subtitle";
-import MealDetails from "./components/MealDetails";
-import { MEALS } from "../data/dummy-data";
-import IconButton from "./components/IconButton";
+import IconButton from '../components/IconButton';
+import List from '../components/MealDetail/List';
+import Subtitle from '../components/MealDetail/Subtitle';
+import MealDetails from '../components/MealDetails';
+import { MEALS } from '../data/dummy-data';
 
 function MealDetailScreen({ route, navigation }) {
   const mealId = route.params.mealId;
+
   const selectedMeal = MEALS.find((meal) => meal.id === mealId);
 
   function headerButtonPressHandler() {
-    console.log("Pressed");
+    console.log('Pressed!');
   }
 
   useLayoutEffect(() => {
@@ -27,7 +28,7 @@ function MealDetailScreen({ route, navigation }) {
         );
       },
     });
-  }, [navigation]);
+  }, [navigation, headerButtonPressHandler]);
 
   return (
     <ScrollView style={styles.rootContainer}>
@@ -56,26 +57,25 @@ export default MealDetailScreen;
 const styles = StyleSheet.create({
   rootContainer: {
     marginBottom: 32,
-    backgroundColor: "#000",
   },
   image: {
-    width: "100%",
+    width: '100%',
     height: 350,
   },
   title: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
     fontSize: 24,
     margin: 8,
-    textAlign: "center",
-    color: "white",
+    textAlign: 'center',
+    color: 'white',
   },
   detailText: {
-    color: "white",
+    color: 'white',
   },
   listOuterContainer: {
-    alignItems: "center",
+    alignItems: 'center',
   },
   listContainer: {
-    width: "80%",
+    width: '80%',
   },
 });
