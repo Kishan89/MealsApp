@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mealsapp2",
-    "slug": "mealsapp2",
+    "name": "mealsapp",
+    "slug": "mealsapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -9,8 +9,7 @@
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "contain"
     },
     "ios": {
       "supportsTablet": true
